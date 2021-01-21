@@ -1,8 +1,39 @@
+@import './bulma.min.css';
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	padding: 0;
+	margin: 0;
 }
 
-a {
-  color: #00B7FF;
+.is-blue {
+	background-color: rgb(48, 60, 122);
+}
+
+.button.is-blue {
+	background-color: rgb(48, 60, 122);
+	border-color: transparent;
+	color: rgb(255, 255, 255);
+}
+
+.button.is-blue.is-inverted {
+	background-color: rgb(255, 255, 255);
+	color: rgb(48, 60, 122);
+}
+
+h1.navbar-item {
+	color: rgb(255, 255, 255);
+	font-size: 22px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	letter-spacing: .2rem;
+}
+
+.navbar-item {
+	color: rgb(255, 255, 255);
+}
+
+.logo{
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
 }
