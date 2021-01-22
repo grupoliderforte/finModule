@@ -1,66 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema GLF</title>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/stylesheets/bulma.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-    <!-- Hero FullHeight -->
-    <section class="hero is-blue is-fullheight">
-        <!-- Barra de Navegação -->
-        <div class="hero-head">
-            <header class="navbar py-5">
-                <div class="container">
-                    <!-- Nome do Projeto -->
-                    <div class="navbar-brand">
-                        <h1 class="navbar-item">
-                            Faturamento Grupo Liderforte
-                        </h1>
-                        <span class="navbar-burger" data-target="navbarMenu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </div>
-                    <!-- Menu -->
-                    <div id="navbarMenu" class="navbar-menu">
-                        <div class="navbar-end">
-                            <div class="navbar-item">
-                                Ainda não é nosso cliente?
-                            </div>
-                            <span class="navbar-item">
-                                <a href="" class="button is-blue is-inverted">
-                                    Consulte nossos preços
-                                </a>
+    <!-- Hero -->
+    <section id="login">
+        <!-- Navegação -->
+        <nav class="navbar py-5 is-default" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <span class="navbar-item system-name">
+                        Sistema de Faturamento GLF
+                    </span>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarMenu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item is-fullwidth">
+                            <span>
+                                Ainda não tem sua chave?
                             </span>
                         </div>
-                    </div>
-                </div>
-            </header>
-        </div>
-
-        <!-- Caixa de Login -->
-        <div class="hero-body">
-            <div class="container">
-                <div class="wrapper">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="logo is-4by3">
-                                <img src="/images/logo.svg" alt="Grupo Liderforte">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <a href=""></a>
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a href="/vendas" class="button is-light">
+                                    Ligar para Vendas
+                                </a>
+                                <a href="/contato" class="button is-outline">
+                                    Entrar em contato
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
+        <!-- Login Box -->
+        <section id="box">
+            <div class="container">
+                <div class="card is-default">
+                    <div class="card-image has-text-centered">
+                        <figure class="is-4by3">
+                            <img src="/images/logo.svg" alt="Grupo Liderforte">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <h1 class="pt-2 pb-5">Login</h1>
+                        <form action="/users/authenticate" method="post">
+                            <div class="field">
+                                <label for="email" class="label">E-mail</label>
+                                <div class="control">
+                                    <input type="text" class="input" placeholder="seu@email.com">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="password" class="label">Senha</label>
+                                <div class="control">
+                                    <input type="password" class="input" placeholder="*********">
+                                </div>
+                            </div>
+
+                            <div class="wrapper py-3">
+                                <button class="button is-primary" type="submit">Entrar</button>
+                                <button class="button is-secondary" type="reset">Limpar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
+
+
 </body>
+
+<script src="/javascripts/main.js"></script>
 
 </html>
