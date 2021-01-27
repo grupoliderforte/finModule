@@ -1,90 +1,130 @@
-body{
-	overflow-x: hidden;
+* {
+	padding: 0;
+	box-sizing: border-box;
+}
+#main {
+	width: 100%;
+	margin: 0 auto;
 }
 
-#login {
+.login-container {
 	width: 100%;
-	height: 100vh;
-	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
 	background: linear-gradient(to bottom, #303c7a, #1c2550);
 }
 
-#login .navbar-menu {
-	box-shadow: none;
-	background: #303c7a;
+.wrapper {
+	width: 600px;
+	background: #ffffff;
+	border-top: 5px solid #c4a56e;
+	border-bottom: 5px solid #c4a56e;
+	border-radius: 10px;
+	overflow: hidden;
+	padding-top: 65px;
+	padding-bottom: 35px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
-#login .navbar-item {
-	color: #fff;
+@media screen and (min-width: 961px) {
+	.wrapper{
+		width: 400px;
+	}
 }
 
-#login .is-default {
-	background-color: transparent;
-}
-
-#login .navbar-burger {
-	color: #fff;
-}
-
-#login .system-name {
-	font-size: 1.1rem;
-	font-weight: bold;
-	font-family: 'Poppins', sans-serif;
-	letter-spacing: .075rem;
-	cursor: default;
-	color: #fff;
-}
-
-#box {
-	padding: 3.2rem 1rem;
-}
-
-#box .card {
-	background: #1c2550;
-	color: #fff;
-	padding: 2rem 1.5rem;
-	border-radius: 1.4rem;
-	border-top: 1rem solid #c4a56e;
-	border-bottom: 1rem solid #c4a56e;
-}
-
-#box .card .card-content {
-	padding: 24px 0;
-}
-
-#box .card h1 {
-	padding: 0;
-	font-size: 2rem;
-	font-weight: bold;
-	font-family: 'Poppins', sans-serif;
-}
-
-#box img {
-	width: 7rem;
-}
-
-#box .label {
-	color: #fff;
-	font-size: 1.1rem;
-	font-weight: bold;
-	letter-spacing: .1rem;
-}
-
-#box .input:focus,
-#box .input:active {
-	border-color: #c4a56e;
-	box-shadow: 0 0 0 .125em rgba(196, 165, 110, 0.25);
-}
-
-#box .button.is-primary{
+.login-form {
 	width: 100%;
-	background-color: #303c7a;
-	color: #fff;
-	margin-bottom: 1rem;
 }
 
-#box .button.is-secondary{
-	width: 100%;
-	background-color: #fff;
+img.logo {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.form-title {
+	display: block;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 42px;
 	color: #303c7a;
+	line-height: 1.2;
+	padding-bottom: 50px;
+}
+
+.field {
+	width: 100%;
+	border-bottom: 2px solid #d9d9d9;
+	margin-bottom: 25px;
+}
+
+.input {
+	position: relative;
+	background: transparent;
+	height: 55px;
+	border: 0;
+	outline: 0;
+}
+
+.input::placeholder {
+	color: rgba(48, 60, 122, 0.5);
+}
+
+.input:focus,
+.input:active {
+	box-shadow: none;
+}
+
+.label-input {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	color: #303c7a;
+	line-height: 1.5;
+	padding-left: 7px;
+}
+
+.icon {
+	margin: 7px 0 7px 0;
+}
+
+.bx {
+	font-size: 22px;
+	transition: all .4s;
+}
+
+.bx:focus,
+.bx:active {
+	font-weight: bold;
+	color: #c4a56e;
+}
+
+.btn-field {
+	display: block;
+	margin-top: 50px;
+}
+
+.button {
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+}
+.button.is-primary {
+	background-color: #303c7a;
+}
+
+.vendas li {
+	color: #999;
+	text-align: center;
+	display: inline;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.vendas li a {
+	color: #999;
 }

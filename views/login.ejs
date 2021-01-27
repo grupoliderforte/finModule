@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,88 +7,79 @@
     <title>
         <%= title %>
     </title>
-    <link rel="stylesheet" href="/stylesheets/bulma.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/stylesheets/bulma.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-    <!-- Hero -->
-    <section id="login">
-        <!-- Navegação -->
-        <nav class="navbar py-5 is-default" role="navigation" aria-label="main navigation">
-            <div class="container">
-                <div class="navbar-brand">
-                    <span class="navbar-item system-name">
-                        Sistema de Faturamento GLF
+
+    <!-- main -->
+    <section id="main">
+        <div class="login-container">
+            <div class="wrapper">
+
+                <!-- logo -->
+                <figure>
+                    <img src="/images/logo.svg" class="logo" alt="Grupo Liderforte">
+                </figure>
+
+                <!-- form -->
+                <form action="/auth" class="login-form">
+                    <span class="form-title has-text-centered">
+                        Login
                     </span>
 
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                        data-target="navbarMenu">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
-                <div id="navbarMenu" class="navbar-menu">
-                    <div class="navbar-end">
-                        <div class="navbar-item is-fullwidth">
-                            <span>
-                                Ainda não tem sua chave?
+                    <!-- login -->
+                    <div class="field">
+                        <span class="label-input">E-mail</span>
+                        <p class="control has-icons-left">
+                            <input class="input" name="email" type="email" placeholder="Digite seu e-mail" required>
+                            <span class="icon is-small is-left">
+                                <i class='bx bx-user'></i>
                             </span>
-                        </div>
-                        <div class="navbar-item">
-                            <div class="buttons">
-                                <a href="/vendas" class="button is-light">
-                                    Ligar para Vendas
-                                </a>
-                                <a href="/contato" class="button is-outline">
-                                    Entrar em contato
-                                </a>
-                            </div>
-                        </div>
+                        </p>
                     </div>
-                </div>
-            </div>
-        </nav>
-        <!-- Login Box -->
-        <section id="box">
-            <div class="container">
-                <div class="card is-default">
-                    <div class="card-image has-text-centered">
-                        <figure class="is-4by3">
-                            <img src="/images/logo.svg" alt="Grupo Liderforte">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <h1 class="pt-2 pb-5">Login</h1>
-                        <form action="/users/authenticate" method="post">
-                            <div class="field">
-                                <label for="email" class="label">E-mail</label>
-                                <div class="control">
-                                    <input type="text" class="input" placeholder="seu@email.com">
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label for="password" class="label">Senha</label>
-                                <div class="control">
-                                    <input type="password" class="input" placeholder="*********">
-                                </div>
-                            </div>
 
-                            <div class="wrapper py-3">
-                                <button class="button is-primary" type="submit">Entrar</button>
-                                <button class="button is-secondary" type="reset">Limpar</button>
-                            </div>
-                        </form>
+                    <!-- senha -->
+                    <div class="field">
+                        <span class="label-input">Senha</span>
+                        <p class="control has-icons-left">
+                            <input class="input" name="password" type="password" placeholder="Digite sua senha"
+                                required>
+                            <span class="icon is-small is-left">
+                                <i class='bx bx-lock-alt'></i>
+                            </span>
+                        </p>
                     </div>
+
+                    <!-- botoes -->
+                    <span class="btn-field">
+                        <button type="submit" class="button is-primary is-fullwidth py-5">Entrar</button>
+                    </span>
+                </form>
+
+                <!-- redirect -->
+                <div class="container mt-5">
+                    <ul class="vendas has-text-centered">
+                        <li>
+                            Não possui sua conta?
+                        </li>
+                        <li>
+                            &sdot;
+                        </li>
+                        <li>
+                            <a href="/sales">
+                                Fale com vendas
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
     </section>
 
-
 </body>
-
-<script src="/javascripts/main.js"></script>
 
 </html>
