@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/stylesheets/bulma.css">
+    <link rel="stylesheet" href="/stylesheets/dashboard.css">
+</head>
+
+<body>
+
+    <!-- main -->
+    <section id="main">
+
+        <!-- navegação -->
+        <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="https://bulma.io">
+                        <img src="/images/logo.svg">
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbar" class="navbar-menu">
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-light">
+                                    <span class="mr-2">
+                                        <i class='bx bx-user-circle'></i>
+                                    </span>
+                                    Perfil
+                                </a>
+                                <a class="button is-light">
+                                    <span class="mr-2">
+                                        <i class='bx bx-log-out'></i>
+                                    </span>
+                                    Sair
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <h1 class="h1">
+                    Dashboard
+                </h1>
+                <small class="subtitle">Sistema de Faturamento &sdot; Grupo Liderforte</small>
+            </div>
+        </header>
+
+        <!-- opções -->
+        <div class="container my-5">
+            <div class="columns is-mobile is-multiline">
+
+                <div class="column is-3-desktop is-half-touch">
+                    <div class="box">
+                        <div class="box-title has-text-centered">
+                            Faturamento
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-3-desktop is-half-touch">
+                    <div class="box">
+                        <div class="box-title has-text-centered">
+                            Clientes
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-3-desktop is-half-touch">
+                    <div class="box">
+                        <div class="box-title has-text-centered">
+                            Serviços
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-3-desktop is-half-touch">
+                    <div class="box">
+                        <div class="box-title has-text-centered">
+                            Representantes
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="columns is-mobile is-multiline">
+            
+                <div class="column is-3-desktop is-half-touch">
+                    <div class="box">
+                        <div class="box-title has-text-centered">
+                            Administradoras
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="column is-3-desktop is-half-touch">
+                    <div class="box">
+                        <div class="box-title has-text-centered">
+                            Contratos
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="column is-3-desktop is-half-touch">
+                    <div class="box">
+                        <div class="box-title has-text-centered">
+                            Cotação
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="column is-3-desktop is-half-touch">
+                    <div class="box">
+                        <div class="box-title has-text-centered">
+                            Fornecedores
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <script src="/javascripts/main.js"></script>
+</body>
+
+</html>

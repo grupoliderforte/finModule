@@ -1,7 +1,13 @@
 * {
 	padding: 0;
+	cursor: default;
 	box-sizing: border-box;
 }
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
 #main {
 	width: 100%;
 	margin: 0 auto;
@@ -115,6 +121,12 @@ img.logo {
 }
 .button.is-primary {
 	background-color: #303c7a;
+}
+
+.button.is-primary:hover{
+	background-color: #f0f0f0;
+	color: #303c7a;
+	border: solid 1px #303c7a;
 }
 
 .vendas li {

@@ -1,0 +1,79 @@
+* {
+	padding: 0;
+	cursor: default;
+	box-sizing: border-box;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+#main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+.navbar.is-primary{
+    background: #303c7a;
+}
+
+.navbar-menu{
+    background: #303c7a;
+    color: #fff;
+}
+
+.navbar-item img{
+    max-height: 70px;
+}
+
+.navbar.is-primary .navbar-brand > a.navbar-item:hover,
+.navbar.is-primary .navbar-brand > a.navbar-item:focus{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bx {
+    display: flex;
+	font-size: 22px;
+	transition: all .4s;
+}
+
+.bx:focus,
+.bx:active {
+	font-weight: bold;
+	color: #c4a56e;
+}
+
+.header{
+    padding: 120px 5% 5% 5%;
+}
+
+.header .h1{
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 961px){
+    .header .h1{
+        font-size: 42px;
+    }
+}
+
+.header .subtitle{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #c4a56e;
+}
